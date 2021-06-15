@@ -1,12 +1,18 @@
 body{
-    height: 2122px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 header{
    display: block;
     position: fixed;
     width: 100%;
     /* margin-left: -7px; */
-    margin: -8px;
+    margin-top: -8px;
+
+}
+.container{
+    width: 100%;
 }
 .brocode{
     font-family: cursive;
@@ -15,9 +21,16 @@ header{
     
 }
 .part3{
-    height: 600px;
+    height: 100%;
+    width: 100%;
     border: 2px solid red;
-
+}
+.part3::before{
+    background: url("https://source.unsplash.com/random")  no-repeat center center/cover;
+    content: "";
+    /* position: absolute; */
+    opacity: 0.5;
+    z-index: -1;
 }
 
 #part3-head{
@@ -25,22 +38,15 @@ header{
     text-decoration: underline;
     padding-left: 30px;
     border: orangered;
-    
+    font-size: 3rem;
     margin-top: 2px;
-
 }
-
-#part3-head::before{
-   content: "";
-   background: url("https://source.unsplash.com/random") no-repeat center;
-   
-}
-
 .navbar{
     border: rgb(179, 117, 117);
     background-color: rgb(179, 117, 117);
     padding: 2px 3px;
     /* border-radius: 50px; */
+   
 }
 .navigation{
     text-decoration: none;
@@ -57,25 +63,14 @@ header{
     
 }
 a:hover{
-    color: rgb(16, 154, 218);
+    color: white;
     text-decoration: underline;
     
 }
-/* section::before{
-    
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.5;
-} */
 .Section
 {
-    background-image: url("back-img.jpg");
-    background-size: 101% 164%;
-    /* border: 2px solid red; */
+    background: url("/img/back-img.jpg") no-repeat center center/cover;
+    border: 2px solid red;
     height: 358px;
     padding-right: 55px;
     padding-top: 55px;
@@ -99,5 +94,72 @@ a:hover{
 }
 .quote{
     padding-left: 1036px;
+    
+}
+.part4{
+    display: flex;
+    border: 2px solid rgb(179, 117, 117) ;
+    padding: 28px 3px;
+    margin: 118px;
+    background-color: rgb(179, 117, 117);
+    flex-wrap: wrap;
+    
+}
+
+
+.part4-body{
+    padding-left: 83px;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.create{
+    padding-left: 169px;
+}
+.name2{
+    padding-left: 72px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    
+}
+#submit-button{
+    border-radius: 20px;
+    border: 2px solid rgb(122, 78, 78);
+    color:white;
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+    font-size: 16px;
+    box-shadow: 2px 4px rgb(143, 83, 83);
+}
+#submit-button:hover{
+    color:black;
+    cursor: pointer;
+    background-color:rgb(177, 163, 163);
+}
+select{
+    cursor: pointer;
+    font-family: auto;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+
+    
+}
+.email{
+    padding-left: 60px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    
+
+}
+
+#email1{
+    border-radius: 7px;
+}
+#name{
+    border-radius: 7px;
+    
     
 }
